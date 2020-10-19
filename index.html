@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-analytics.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h1>Cloud Cafe</h1>
+
+  <div class="content">
+
+      <form id="add-cafe-form">
+        <input type="text" name= 'name' placeholder="Cafe Name" >
+        <input type="text" name= 'city' placeholder="City Name" >
+        <button type="submit">Add Button</button>
+      </form>
+
+      <ul id="cafe-list"></ul>
+
+  </div>
+
+
+ 
+
+
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyD_f6Y--pmxjtC2GuOW2tLOnIlHHo7ZeX8",
+    authDomain: "cafe-app-5da6f.firebaseapp.com",
+    databaseURL: "https://cafe-app-5da6f.firebaseio.com",
+    projectId: "cafe-app-5da6f",
+    storageBucket: "cafe-app-5da6f.appspot.com",
+    messagingSenderId: "194073174405",
+    appId: "1:194073174405:web:9624d98236434e093124ec",
+    measurementId: "G-N7DTEYEED4"
+  };
+  // Initialize Firebase
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  const db = firebase.firestore();
+  // db.settings({timestampsInSnapshots : true});
+  firebase.analytics();
+</script>
+  <script src="app.js"></script>
+</body>
+</html>
